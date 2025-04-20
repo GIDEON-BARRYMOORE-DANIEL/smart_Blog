@@ -1,0 +1,253 @@
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    /* Show hamburger menu and hide navigation */
+   nav .menu-toggle {
+      display: block !important;
+      margin-right: 20px;
+      margin-top: 4px;
+      color: #fff;
+      z-index: 1000;
+    }
+    
+    nav .sitename {
+      margin-left: 20px;
+    }
+    
+    nav .navigation-div {
+      position: fixed;
+      top: 0;
+      right: -90%;
+      width: 70%;
+      height: 80vh;
+      background-color: rgb(20, 46, 108, 0.95);
+      flex-direction: column;
+      padding-top: 60px;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    
+    nav .navigation-div.active {
+      right: -100px;
+    }
+    
+    nav .navigation-div li {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px 0;
+      justify-content: center;
+    }
+    
+    nav .navigation-div li a {
+      margin-left: 0;
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      padding: 10px 0;
+    }
+    
+    .write-btn {
+      margin: 15px auto;
+      width: 80%;
+    }
+    
+    /* Adjust main content for mobile */
+    .hero .hero-content-div {
+      align-items: center;
+      text-align: center;
+    }
+    
+    main .main-content {
+      align-items: center;
+      text-align: center;
+      padding: 0 15px;
+    }
+    
+    .main-button {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    
+    .download-btn {
+      margin-bottom: 10px;
+      padding:15px;
+    }
+
+    .main-button .download-btn.signup.mobile-post-btn {
+      background-color: #2a5dd3; /* Same as your write-btn */
+    }
+    
+    /* Optionally hide the regular write button in the nav since we're providing an alternative */
+    nav .navigation-div .write-btn {
+      display: none;
+    }
+
+    textarea {
+      min-height: 120px; /* Smaller height for mobile */
+      font-size: 14px; /* Slightly smaller text */
+  }
+
+  .post-modal{
+    top:10%;
+
+  
+  }
+
+ .created_post {
+        width: 100% !important;
+        margin: 10px 0; /* Optional: add some space */
+        color: #2D465E;
+  }
+
+ 
+    .static_created_post {
+      /* background-color: red; */
+    flex-direction: column; 
+    padding: 20px;
+    min-height: auto !important;
+    min-width:90% !important;
+   
+  }
+  
+    .pic-div {
+      width: 100% !important;
+      min-height: 200px; /* or whatever fits best on small screens */
+    }
+  
+    .staticPost-div {
+      width: 100% !important;
+      min-height:auto;
+     
+    }
+
+    .dynamicPost-div{
+      /* background-color: green; */
+      width: 80%;
+
+    }
+
+    .dynamicPost-div .created_post{
+      min-width: 90%;
+     
+    }
+
+    .dynamicPost-div .createdPost_pic{
+      min-width:330px;
+      height:300px !important;
+    }
+  
+
+
+}
+
+@media (max-width: 990px) {
+  /* also works just fine */
+  .dynamicPost-div{
+   
+    width: 100%;
+   
+  }
+
+  .created_post {
+    width: 100% !important;
+    margin: 10px 0; /* Optional: add some space */
+    color: #2D465E;
+}
+
+
+.static_created_post {
+  /* background-color: red; */
+flex-direction: column; 
+padding: 20px;
+min-height: auto !important;
+min-width:90% !important;
+
+}
+
+.pic-div {
+  width: 100% !important;
+  min-height: 200px; /* or whatever fits best on small screens */
+}
+
+.staticPost-div {
+  width: 100% !important;
+  min-height:auto;
+ 
+}
+
+.dynamicPost-div{
+  /* background-color: green; */
+  width: 80%;
+
+}
+
+.dynamicPost-div .created_post{
+  min-width: 90%;
+ 
+}
+
+.dynamicPost-div .createdPost_pic{
+  min-width:330px;
+  height:300px !important;
+}
+
+
+
+  
+
+}
+
+@media (max-width:500px){
+  .dynamicPost-div{
+   
+    width: 100%;
+   
+  }
+
+  .created_post {
+    width: 100% !important;
+    margin: 10px 0; /* Optional: add some space */
+    color: #2D465E;
+}
+
+
+.static_created_post {
+  /* background-color: red; */
+flex-direction: column; 
+padding: 20px;
+min-height: auto !important;
+min-width:90% !important;
+
+}
+
+.pic-div {
+  width: 100% !important;
+  min-height: 200px; /* or whatever fits best on small screens */
+}
+
+.staticPost-div {
+  width: 100% !important;
+  min-height:auto;
+ 
+}
+
+.dynamicPost-div{
+  /* background-color: green; */
+  min-width: 100%;
+
+}
+
+.dynamicPost-div .created_post{
+  min-width: 90%;
+ 
+}
+
+.dynamicPost-div .createdPost_pic{
+  min-width:330px;
+  height:300px !important;
+}
+}
+
+
+

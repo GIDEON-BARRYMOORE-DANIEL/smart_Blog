@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ALL CSS EMBEBED LINKS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+    <%- include("partials/create.ejs") %>
+
+<header class="hero">
+    <div class="hero-content-div">
+       <nav>
+            <div class="sitename">
+                <h3>SMART BLOG</h3>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars" id="menu-icon"></i>
+            </div>
+            <div class="navigation-div">
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/about" class="nav-color">About</a></li>
+                <li><a href="/blog" class="nav-color">Blog</a></li>
+                <li><a href="/login" class="nav-color">Login</a></li>
+                <li><a href="/signup"class="nav-color">Sign Up</a></li>
+                <button href="" class="write-btn">Write Post</button>
+               
+
+            </div>
+           
+           
+           
+            
+              
+        </nav>
+        <main>
+            <div class="main-content">
+                <h1>Unleash Your Thoughts, Inspire the World!</h1>
+                <p>Explore ideas, share stories, and make your mark one post at a time.</p>
+                <div class="main-button">
+                    <button href="" class="write-btn download-btn signup"><b>signup Now</b></button>
+                    <a href="" class="download-btn login">Login</a>
+                </div>
+              
+
+            </div>
+        </main>
+    </div>
+
+
+
+</header>
+<div class="post-section">
+    <div class="static_created_post">
+        <div class="pic-div">
+            
+        </div>
+        <div class="staticPost-div">
+            <span><b>Anonymous User</b></span>
+            <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+            </span>
+            <h2><b>How To Land High-Paying Remote Job</b></h2>
+            <p>Learn the top strategies for landing a high-paying remote job that you really love..</p>
+            <a href="">Read article</a>
+
+        </div>
+            
+        </div>
+        <div class="dynamicPost-div">
+            <div class="created_post">
+                
+                <img class="createdPost_pic" src="/images/tMoney.jpg" alt="money pic">
+                <span><b>Anonymous User</b></span>
+                <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+                </span>
+                <h4><b>How I Got Started with Fullstack</b></h4>
+                <p>Just a little over a year ago, I had no idea what fullstack meant and trust me i can say the journey has been so incredible...</p>
+                <a href="">Read article</a>
+            </div>
+          
+            <div class="created_post">
+                <img class="createdPost_pic" src="/images/tMoney.jpg" alt="money pic">
+                <span><b>Anonymous User</b></span>
+                <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+                </span>
+                <h4><b>Things I’ve Learned in Week 2</b></h4>
+                <p>Setting up EJS templates, understanding routing in Express, node.js, ajax, and writing clean CSS...</p>
+                <a href="">Read article</a>
+            </div>
+            <div class="created_post">
+                
+                <img class="createdPost_pic" src="/images/tMoney.jpg" alt="money pic">
+                <span><b>Anonymous User</b></span>
+                <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+                </span>
+                <h4><b>Things I’ve Learned in Week 2</b></h4>
+                <p>Setting up EJS templates, understanding routing in Express, node.js, ajax, and writing clean CSS..</p>
+                <a href="">Read article</a>
+            </div>
+            <div class="created_post">
+                <img class="createdPost_pic" src="/images/tMoney.jpg" alt="money pic">
+                <span><b>Anonymous User</b></span>
+                <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+                </span>
+                <h4><b>Things I’ve Learned in Week 2</b></h4>
+                <p>Setting up EJS templates, understanding routing in Express, node.js, ajax, and writing clean CSS...</p>
+                <a href="">Read article</a>
+            </div>
+            <div class="created_post">
+                <img class="createdPost_pic" src="/images/tMoney.jpg" alt="money pic">
+                <span><b>Anonymous User</b></span>
+                <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+                </span>
+                <h4><b>Things I’ve Learned in Week 2</b></h4>
+                <p>Setting up EJS templates, understanding routing in Express, node.js, ajax, and writing clean CSS...</p>
+                <a href="">Read article</a>
+            </div>
+            <div class="created_post">
+                <img class="createdPost_pic" src="/images/tMoney.jpg" alt="money pic">
+                <span><b>Anonymous User</b></span>
+                <span> <%= postTime.toLocaleString('en-GB', {
+                    hour: "2-digit",
+                    minute : "2-digit",
+                    hour12: true,
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                   }) %>
+                </span>
+                 <h4><b>Things I’ve Learned in Week 2</b></h4>
+                <p>Setting up EJS templates, understanding routing in Express, node.js, ajax, and writing clean CSS..</p>
+                <a href="">Read article</a>
+            </div>
+        </div>
+       
+    </div>
+ 
+      
+
+</div>
+
+<%- include("partials/footer") %>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
